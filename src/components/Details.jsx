@@ -21,6 +21,7 @@ import {
 import React from 'react';
 import { FaWhatsapp, FaClipboard } from 'react-icons/fa';
 import { FiYoutube } from 'react-icons/fi';
+import { FaTelegramPlane } from 'react-icons/fa';
 
 const Details = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -144,9 +145,26 @@ const Details = () => {
                 воспользуйтесь приложением вашего банка. <br /> <br /> После
                 того как совершите оплату, отправьте чек в мой Telegram, и я
                 добавлю вас в группу спонсоров, чтобы вы могли отслеживать, как
-                используются ваши средства. <br />
-                <span style={{ fontWeight: 'bold' }}>Мой Telegram:</span>{' '}
-                @Makka567
+                используются ваши средства. <br /> Мой Telegram:{' '}
+                <a
+                  href="https://t.me/Makka567"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span
+                    style={{
+                      fontWeight: 'bold',
+                      color: '#007bff',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: 7,
+                    }}
+                  >
+                    Перейти
+                    <FaTelegramPlane />
+                  </span>
+                </a>
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -203,7 +221,7 @@ const Details = () => {
           as="a"
           target="_blank"
           rel="noopener noreferrer"
-          colorScheme='red'
+          colorScheme="red"
           size="lg"
           leftIcon={<Icon as={FiYoutube} />}
           _hover={{ transform: 'scale(1.05)' }}
@@ -213,22 +231,21 @@ const Details = () => {
         </Button>
       </Box>
 
-        {/* Модальное окно */}
-        <Modal isOpen={isOpen} onClose={onClose} isCentered>
-              <ModalOverlay />
-              <ModalContent>
-                <ModalHeader>Информация</ModalHeader>
-                <ModalBody>
-                  <Text>Этот раздел находится в разработке.</Text>
-                </ModalBody>
-                <ModalFooter>
-                  <Button colorScheme="blue" onClick={onClose}>
-                    Закрыть
-                  </Button>
-                </ModalFooter>
-              </ModalContent>
-            </Modal>
-
+      {/* Модальное окно */}
+      <Modal isOpen={isOpen} onClose={onClose} isCentered>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Информация</ModalHeader>
+          <ModalBody>
+            <Text>Этот раздел находится в разработке.</Text>
+          </ModalBody>
+          <ModalFooter>
+            <Button colorScheme="blue" onClick={onClose}>
+              Закрыть
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </>
   );
 };
