@@ -64,7 +64,7 @@ function App() {
           minH="100vh"
           p={3}
           sx={{
-            backgroundImage: `url(${heart})`, // Добавил `url()`, чтобы правильно подставить изображение
+            backgroundImage: `url(https://i.pinimg.com/736x/03/0a/6c/030a6c02bbf7fadf81051cdafd2ae883.jpg)`, // Добавил `url()`, чтобы правильно подставить изображение
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed', // Фон остаётся фиксированным при прокрутке
