@@ -18,7 +18,6 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { AiFillCheckCircle } from 'react-icons/ai';
 import logoMuslimKids from './assets/MuslimKidsLogoReal.png';
-import heart from './assets/heart.jpg';
 import Details from './components/Details';
 import HelpersText from './components/HelpersText';
 

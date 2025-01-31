@@ -10,13 +10,6 @@ import {
   Icon,
   Flex,
   useBreakpointValue,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-  useDisclosure,
 } from '@chakra-ui/react';
 import React from 'react';
 import { FaWhatsapp, FaClipboard } from 'react-icons/fa';
@@ -24,8 +17,6 @@ import { FiYoutube } from 'react-icons/fi';
 import { FaTelegramPlane } from 'react-icons/fa';
 
 const Details = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
   const devlinksHelp = [
     {
       id: 1,
@@ -219,33 +210,17 @@ const Details = () => {
       <Box textAlign="center" mt="1em">
         <Button
           as="a"
+          href="https://mtube-two.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           colorScheme="red"
           size="lg"
           leftIcon={<Icon as={FiYoutube} />}
           _hover={{ transform: 'scale(1.05)' }}
-          onClick={onOpen}
         >
           Muslim You Tube
         </Button>
       </Box>
-
-      {/* Модальное окно */}
-      <Modal isOpen={isOpen} onClose={onClose} isCentered>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Информация</ModalHeader>
-          <ModalBody>
-            <Text>Этот раздел находится в разработке.</Text>
-          </ModalBody>
-          <ModalFooter>
-            <Button colorScheme="blue" onClick={onClose}>
-              Закрыть
-            </Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
     </>
   );
 };
