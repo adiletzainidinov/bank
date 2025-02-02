@@ -24,7 +24,7 @@ const HelpersText = () => {
       {/* Правая часть - информация о сборе */}
       <Box textAlign="center" mt={4}>
         <Text fontWeight="bold" fontSize="lg">Собранная сумма:</Text>
-        <Text fontSize="xl" fontWeight="bold" color="blue.600">1 $ (0,001%)</Text>
+        <Text fontSize="xl" fontWeight="bold" color="blue.600">3.82$ (0.004%)</Text>
         <CircularProgress 
           value={0.1} 
           color="blue.500" 
@@ -33,7 +33,7 @@ const HelpersText = () => {
           trackColor="gray.200"
           capIsRound
         >
-          <CircularProgressLabel fontSize="md" fontWeight="bold">0,001%</CircularProgressLabel>
+          <CircularProgressLabel fontSize="md" fontWeight="bold">0.004%</CircularProgressLabel>
         </CircularProgress>
       </Box>
     </Flex>

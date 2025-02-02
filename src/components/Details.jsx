@@ -24,7 +24,11 @@ const Details = () => {
       imgTitle: 'MBANK',
       text: '4177 4901 7742 7152',
       textFirst: '+996 998 08 38 28',
-      textSecond: 'Адилет З.',
+      textSecond: (
+        <>
+          Адилет З. <br /> ADILET ZAINIDINOV
+        </>
+      ),
     },
     {
       id: 2,
@@ -32,7 +36,11 @@ const Details = () => {
       imgTitle: 'BakAi',
       text: '4714 2400 0199 0424',
       textFirst: '+996 998 08 38 28',
-      textSecond: 'Адилет З.',
+      textSecond: (
+        <>
+          Адилет З. <br /> ADILET ZAINIDINOV
+        </>
+      ),
     },
   ];
 
